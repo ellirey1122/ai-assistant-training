@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-content">
+        <div class="header-icon">🤖</div>
+        <div>
+          <h1>My AI Assistant</h1>
+          <p class="header-subtitle">Ask me anything — I'm here to help!</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="chat-container">
+      <div class="conversation" id="conversation" aria-live="polite">
+        <div class="message message-assistant">
+          <div class="message-avatar">🤖</div>
+          <div class="message-bubble">
+            <p>Hello! I'm your AI assistant. Type a message below and I'll respond.</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="input-area" id="message-form">
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Type your message here..."
+          autocomplete="off"
+          aria-label="Message input"
+        />
+        <button type="submit" id="send-button" aria-label="Send message">
+          <span class="send-icon">➤</span>
+          Send
+        </button>
+      </form>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
